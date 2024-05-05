@@ -3,6 +3,8 @@
 
 An mlx port of Karpathy's [micrograd](https://github.com/karpathy/micrograd) - a tiny scalar-valued autograd engine with a small PyTorch-like neural network library on top.
 
+<img width="1177" alt="banner" src="https://github.com/Jaykef/mlx_micrograd/assets/11355002/06c38920-816a-43c3-b6ba-295e914a3246">
+
 ### Installation
 
 ```bash
