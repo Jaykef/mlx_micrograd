@@ -7,7 +7,7 @@ setuptools.setup(
     name="mlx_micrograd",
     version="0.1.0",
     author="Jaward Sesay",
-    author_email="andrej.karpathy@gmail.com",
+    author_email="jawardsesay1996@gmail.com",
     description="An mlx port of Karpathy's micrograd - a tiny scalar-valued autograd engine with a small PyTorch-like neural network library on top.",
     long_description=long_description,
     long_description_content_type="text/markdown",
