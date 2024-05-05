@@ -16,7 +16,7 @@ pip install mlx_micrograd
 Example showing a number of possible supported operations:
 
 ```python
-from micrograd.engine import Value
+from mlx_micrograd.engine import Value
 
 a = Value(-4.0)
 b = Value(2.0)
