@@ -1,5 +1,5 @@
 from mlx_micrograd.engine import Value
-from mlx_micrograd.nn import Module, Neuron, Layer, MLP
+from mlx_micrograd.nn import Neuron, MLP
 
 # BASIC USAGE
 a = Value(-4.0)
@@ -23,6 +23,7 @@ print(f'{b.grad}') # prints array(645.577, dtype=float32), i.e. the numerical va
 n = Neuron(2)
 x = [Value(1.0), Value(-2.0)]
 y = n(x)
+print(y.data)
 
 model = MLP(2, [16, 16, 1]) # 2-layer neural network
 print(model)

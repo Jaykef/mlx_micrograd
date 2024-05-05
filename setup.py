@@ -1,4 +1,10 @@
 import setuptools
+from pathlib import Path
+
+root_dir = Path(__file__).parent
+requirements_path = root_dir / "requirements.txt"
+with open(requirements_path) as fid:
+    requirements = [l.strip() for l in fid.readlines()]
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -16,11 +22,7 @@ setuptools.setup(
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: OS dependent (Apple silicon only)",
-        "Framework :: mlx",
     ],
     python_requires='>=3.6',
-    install_requires=[
-        'mlx', 
-    ],
+    install_requires=requirements,
 )
