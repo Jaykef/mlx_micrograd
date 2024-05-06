@@ -42,10 +42,13 @@ print(f'{b.grad}') # prints array(645.577, dtype=float32), i.e. the numerical va
 
 ### Running tests
 
-To run the unit tests you will have to install [PyTorch](https://pytorch.org/), which the tests use as a reference for verifying the correctness of the calculated gradients. Then simply:
+To run the unit tests cd into tests folder - which has [test_engine.py](https://github.com/Jaykef/mlx_micrograd/blob/main/tests/test_engine.py) that does sanity checks with pytorch's autograd and [tests.py](https://github.com/Jaykef/mlx_micrograd/blob/main/tests/tests.py) which run tests on some supported ops.
 
 ```bash
-python -m pytest
+python test_engine.py
+```
+```bash
+python tests.py
 ```
 
 ### License
